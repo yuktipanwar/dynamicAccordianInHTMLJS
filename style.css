@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(255, 205, 255);
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+}
+
+h1 {
+    color: rgb(82, 81, 81);
+}
+
+p {
+    font-style: italic;
+  }
+
+/*container that can be expanded or collapsed.*/
+.accordian{
+    background-color:white;
+    padding: 20px;
+    border: 1px solid #f4ece4;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px white;
+
+}
+
+
+/*header*/
+.accordian-item{
+    background-color: white;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    /* box-shadow: 1px 1px 5px rgb(250, 207, 172); */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+    
+    
+}
+
+
+.accordian-content{
+    color: #666;
+    max-height: 0;        /*collapse*/
+    padding: 0 16px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+    
+}
+
+.icon{
+    margin-right: 32px;
+    transition: transform 0.2s;
+    
+}
+
+
+.icon.active{
+    transform: rotate(-180deg);
+}
+
+
+
